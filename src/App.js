@@ -40,7 +40,7 @@ function App() {
           {data.weather ? <p>{data.weather[0].main}</p> : null}
         </div>
       </div>
-    {data.name != undefined && 
+    {data.name !== undefined && 
     <div className='bottom'>
     <div className='feels'>
       {data.main ? <p>{data.main.feels_like.toFixed()} &#8451;</p> : null}
